@@ -1,0 +1,36 @@
+const createStudent = () => {
+    const newStudent = {	}
+    newStudent.name = "Matt"
+    newStudent.grade = "12"
+    return newStudent
+}
+
+const studentVar = createStudent()
+console.log(studentVar)
+
+const addMathGrade = (createStudent) => {
+    const newSubject = { }
+    newSubject.math = "B"
+
+    return newSubject
+    }
+    const studentMath = addMathGrade(studentVar)
+    console.log(studentMath)
+    
+    
+    const addHistoryGrade = (addMathGrade) => {
+        const newSubject = { }
+        newSubject.history = "C"
+    return newSubject
+    }
+    const studentHistory = addHistoryGrade(studentMath)
+    console.log(studentHistory)
+    
+    
+    const addScienceGrade = (addHistoryGrade) => {
+        const newSubject = { }
+        newSubject.science = "A"
+    return newSubject
+    }
+    const studentScience = addScienceGrade(studentHistory)
+    console.log(studentScience)
